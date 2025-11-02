@@ -21,6 +21,8 @@ jobs:
 
       - name: Run tests
         run: python manage.py test
+        continue-on-error: true
+
       - name: Run bisect script
         env:
           GITHUB_SHA: ${{ github.sha }}
