@@ -26,6 +26,4 @@ jobs:
       - name: Run bisect script
         env:
           GITHUB_SHA: ${{ github.sha }}
-        run: |
-          chmod +x test_script.sh
-          python myscript.py
+        run: python myscript.py
